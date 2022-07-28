@@ -7,7 +7,7 @@ show: true, count: 0, intervalId: 0
 };
   showStatePerson = () =>{this.setState({
     ...this.state,
-    show: !this.state.show
+    show: !this.state.show, count:0
   });
 };
 
