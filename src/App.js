@@ -29,7 +29,7 @@ componentWillUnmount(){
 
 render() {
   return (
-    <>
+    <div className ="main">
       {this.state.show && (
         <>
           <h1>{this.state.Person.fullName}</h1>
@@ -40,9 +40,9 @@ render() {
         </>
       )}
 
-      <button onClick={() => this.showStatePerson () }>click here</button>
+      <button className='btn' onClick={() => this.showStatePerson () }>click here</button>
       <h2>Component render time: {this.state.count} seconds</h2>
-    </>
+    </div>
     
   );
 }
